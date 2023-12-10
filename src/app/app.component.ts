@@ -17,9 +17,8 @@ export class AppComponent implements OnInit{
   ngOnInit() { }
 
 goToStudents() {
-throw new Error('Method not implemented.');
 
-this.router.navigate(['students']);
+this.router.navigate(['/students']);
 // this.router.navigateByUrl('/student');
 // this.router.push('students');
 }

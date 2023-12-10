@@ -9,12 +9,13 @@ import { StudentService } from './student.service';
   styleUrl: './student.component.scss'
 })
 export class StudentComponent {
-StudentService: any;
   student: any;
 
+  constructor(private service: StudentService)
+  { }
   
 public fillStudentsData(): void {
-  this.StudentService.getAllStudents().subscribe({
+  this.service.getAllStudents().subscribe({
       next: (response: any) => {
           this.student = response;
           console.log("Hello world");
