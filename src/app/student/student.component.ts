@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StudentService } from './student.service';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-student',
   standalone: true,
-  imports: [CommonModule],
+  imports: [RouterModule],
   templateUrl: './student.component.html',
   styleUrl: './student.component.scss'
 })
-export class StudentComponent {
+export default class StudentComponent {
   student: any;
 
   constructor(private service: StudentService)

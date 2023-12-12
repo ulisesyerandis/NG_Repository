@@ -16,9 +16,9 @@ export class AppComponent implements OnInit{
 
   ngOnInit() { }
 
-goToStudents() {
-
-this.router.navigate(['/students']);
+goToStudents() 
+{
+this.router.navigate(['student']);
 // this.router.navigateByUrl('/student');
 // this.router.push('students');
 }
