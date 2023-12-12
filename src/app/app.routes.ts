@@ -8,5 +8,11 @@ export const routes: Routes =
          // { path: 'students', component: StudentComponent }
     path: 'student',
     loadComponent: ()=>import('./student/student.component'),
+    },
+    {
+        path: ' ',
+        redirectTo: '/student',
+        pathMatch:'full'
     }
+   
 ];
